@@ -12,7 +12,8 @@ jobs:
         run: |
           for u in \
             "https://memnikfff-test-bot1.hf.space" \
-            "https://nenbuj-we-superapp.hf.space"; do
+            "https://memnikfff-we-superapp.hf.space" \
+            "https://memnikfff-vitrina.hf.space"; do
             echo "ping $u"
             curl -s -m 90 -o /dev/null -w "  -> %{http_code}\n" "$u/" || true
           done
