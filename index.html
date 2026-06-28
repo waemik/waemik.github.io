@@ -164,9 +164,10 @@
   <div class="wrap">
     <div class="logo"><span class="dot">&lt;/&gt;</span> memnik</div>
     <div class="navlinks">
-      <a class="hide" href="#work">Work</a>
-      <a class="hide" href="#services">Services</a>
-      <a class="btn btn-primary" href="https://www.fiverr.com/memnik" target="_blank" rel="noopener">Hire me</a>
+      <a class="hide" href="#work" data-i18n="nav.work">Work</a>
+      <a class="hide" href="#services" data-i18n="nav.services">Services</a>
+      <button class="btn btn-ghost" id="lang" type="button" style="padding:9px 14px;font-size:14px;font-weight:700">RU</button>
+      <a class="btn btn-primary" href="https://www.fiverr.com/memnik" target="_blank" rel="noopener" data-i18n="nav.hire">Hire me</a>
     </div>
   </div>
 </nav>
@@ -174,12 +175,12 @@
 <header>
   <canvas id="constellation"></canvas>
   <div class="wrap">
-    <div class="eyebrow"><span class="ping"></span> Freelance · Telegram</div>
-    <h1>Telegram <span class="g">Bots &amp; Mini Apps</span><br>that people actually use</h1>
-    <p class="sub">I build production Telegram bots and Mini Apps — real-time, with in-app payments (Telegram Stars), and web scraping that gets past anti-bot protection. Shipped projects with real users, not demos.</p>
+    <div class="eyebrow"><span class="ping"></span> <span data-i18n="hero.eyebrow">Freelance · Telegram</span></div>
+    <h1 data-i18n-html="hero.h1">Telegram <span class="g">Bots &amp; Mini Apps</span><br>that people actually use</h1>
+    <p class="sub" data-i18n="hero.sub">I build production Telegram bots and Mini Apps — real-time, with in-app payments (Telegram Stars), and web scraping that gets past anti-bot protection. Shipped projects with real users, not demos.</p>
     <div class="cta">
-      <a class="btn btn-primary mag" href="https://www.fiverr.com/memnik" target="_blank" rel="noopener">Hire me on Fiverr →</a>
-      <a class="btn btn-ghost mag" href="#work">See live demos</a>
+      <a class="btn btn-primary mag" href="https://www.fiverr.com/memnik" target="_blank" rel="noopener" data-i18n="cta.hire">Hire me on Fiverr →</a>
+      <a class="btn btn-ghost mag" href="#work" data-i18n="cta.demos">See live demos</a>
     </div>
     <div class="chips">
       <span class="chip">Python · aiogram</span>
@@ -194,37 +195,37 @@
 
 <div class="wrap">
   <div class="stats">
-    <div class="stat reveal"><b data-count="6">0</b><span>shipped projects</span></div>
-    <div class="stat reveal"><b data-count="4">0</b><span>live browser demos</span></div>
-    <div class="stat reveal"><b>Stars</b><span>in-app payments</span></div>
-    <div class="stat reveal"><b>24/7</b><span>deployed &amp; running</span></div>
+    <div class="stat reveal"><b data-count="6">0</b><span data-i18n="stat.projects">shipped projects</span></div>
+    <div class="stat reveal"><b data-count="4">0</b><span data-i18n="stat.demos">live browser demos</span></div>
+    <div class="stat reveal"><b>Stars</b><span data-i18n="stat.payments">in-app payments</span></div>
+    <div class="stat reveal"><b>24/7</b><span data-i18n="stat.deployed">deployed &amp; running</span></div>
   </div>
 </div>
 
 <section id="services">
   <div class="wrap">
-    <div class="h2 reveal">What I do</div>
-    <p class="lead reveal">End-to-end: from idea and clean code to deployment that runs around the clock.</p>
+    <div class="h2 reveal" data-i18n="svc.h2">What I do</div>
+    <p class="lead reveal" data-i18n="svc.lead">End-to-end: from idea and clean code to deployment that runs around the clock.</p>
     <div class="grid svc" style="margin-top:34px">
       <div class="card tilt reveal">
         <div class="ic" style="background:rgba(52,176,255,.15);color:var(--blue)">🤖</div>
-        <h3>Telegram bots</h3>
-        <p>aiogram bots of any complexity — menus, scenarios, databases, broadcasts, admin panels, payments.</p>
+        <h3 data-i18n="svc.bots.t">Telegram bots</h3>
+        <p data-i18n="svc.bots.d">aiogram bots of any complexity — menus, scenarios, databases, broadcasts, admin panels, payments.</p>
       </div>
       <div class="card tilt reveal">
         <div class="ic" style="background:rgba(139,123,255,.15);color:var(--purple)">📱</div>
-        <h3>Telegram Mini Apps</h3>
-        <p>React apps inside Telegram: native UX, passwordless login, real-time updates over WebSocket.</p>
+        <h3 data-i18n="svc.mini.t">Telegram Mini Apps</h3>
+        <p data-i18n="svc.mini.d">React apps inside Telegram: native UX, passwordless login, real-time updates over WebSocket.</p>
       </div>
       <div class="card tilt reveal">
         <div class="ic" style="background:rgba(255,183,3,.15);color:var(--gold)">⭐</div>
-        <h3>In-app payments</h3>
-        <p>Telegram Stars &amp; Payments: invoices, subscriptions, automatic delivery and refunds.</p>
+        <h3 data-i18n="svc.pay.t">In-app payments</h3>
+        <p data-i18n="svc.pay.d">Telegram Stars &amp; Payments: invoices, subscriptions, automatic delivery and refunds.</p>
       </div>
       <div class="card tilt reveal">
         <div class="ic" style="background:rgba(46,196,182,.15);color:var(--teal)">🔎</div>
-        <h3>Scraping &amp; monitoring</h3>
-        <p>Price &amp; listing monitoring (Avito, Wildberries, Ozon) with anti-bot bypass via real browser.</p>
+        <h3 data-i18n="svc.scrape.t">Scraping &amp; monitoring</h3>
+        <p data-i18n="svc.scrape.d">Price &amp; listing monitoring (Avito, Wildberries, Ozon) with anti-bot bypass via real browser.</p>
       </div>
     </div>
   </div>
@@ -232,74 +233,74 @@
 
 <section id="work">
   <div class="wrap">
-    <div class="h2 reveal">Selected work</div>
-    <p class="lead reveal">Four projects are live — open them right in your browser (payments are simulated in demo mode).</p>
+    <div class="h2 reveal" data-i18n="work.h2">Selected work</div>
+    <p class="lead reveal" data-i18n="work.lead">Four projects are live — open them right in your browser (payments are simulated in demo mode).</p>
     <div class="grid proj" style="margin-top:34px">
 
       <!-- Molotok -->
       <div class="card p tilt reveal">
         <div class="pbar" style="background:linear-gradient(90deg,#ffb703,#ff4d6d)"></div>
-        <div class="ptop"><span class="ptag live">Live demo</span><span class="muted" style="font-size:13px">Flagship</span></div>
-        <h3>🔨 Molotok — live auctions</h3>
-        <p>Real-time auction Mini App. Sellers list a lot, bidders compete live (WebSocket), an anti-snipe timer extends the final seconds, the winner pays with Telegram Stars and the bot delivers automatically.</p>
+        <div class="ptop"><span class="ptag live" data-i18n="tag.live">Live demo</span><span class="muted" style="font-size:13px" data-i18n="tag.flagship">Flagship</span></div>
+        <h3 data-i18n="p.molotok.t">🔨 Molotok — live auctions</h3>
+        <p data-i18n="p.molotok.d">Real-time auction Mini App. Sellers list a lot, bidders compete live (WebSocket), an anti-snipe timer extends the final seconds, the winner pays with Telegram Stars and the bot delivers automatically.</p>
         <div class="tags"><span class="tag">React</span><span class="tag">Fastify</span><span class="tag">WebSocket</span><span class="tag">node:sqlite</span><span class="tag">Telegram Stars</span></div>
         <div class="plinks">
-          <a class="plink" href="https://memnikfff-test-bot1.hf.space" target="_blank" rel="noopener">▶ Open live demo</a>
-          <a class="plink" href="https://t.me/tets_molot_bot" target="_blank" rel="noopener">Open in Telegram</a>
+          <a class="plink" href="https://memnikfff-test-bot1.hf.space" target="_blank" rel="noopener" data-i18n="link.demo">▶ Open live demo</a>
+          <a class="plink" href="https://t.me/tets_molot_bot" target="_blank" rel="noopener" data-i18n="link.tg">Open in Telegram</a>
         </div>
       </div>
 
       <!-- We -->
       <div class="card p tilt reveal">
         <div class="pbar" style="background:linear-gradient(90deg,#8b7bff,#ff4d6d)"></div>
-        <div class="ptop"><span class="ptag live">Live demo</span><span class="muted" style="font-size:13px">Super-app</span></div>
-        <h3>❤️ We — shared-life super-app</h3>
-        <p>A Mini App for couples, families and flatmates: shared finances with “who owes whom”, household tasks, a feed and a calendar — all updating in real time across members.</p>
+        <div class="ptop"><span class="ptag live" data-i18n="tag.live">Live demo</span><span class="muted" style="font-size:13px" data-i18n="tag.superapp">Super-app</span></div>
+        <h3 data-i18n="p.we.t">❤️ We — shared-life super-app</h3>
+        <p data-i18n="p.we.d">A Mini App for couples, families and flatmates: shared finances with “who owes whom”, household tasks, a feed and a calendar — all updating in real time across members.</p>
         <div class="tags"><span class="tag">React</span><span class="tag">Fastify</span><span class="tag">WebSocket</span><span class="tag">SQLite</span></div>
         <div class="plinks">
-          <a class="plink" href="https://memnikfff-we-superapp.hf.space" target="_blank" rel="noopener">▶ Open live demo</a>
+          <a class="plink" href="https://memnikfff-we-superapp.hf.space" target="_blank" rel="noopener" data-i18n="link.demo">▶ Open live demo</a>
         </div>
       </div>
 
       <!-- PriceGlow -->
       <div class="card p tilt reveal">
         <div class="pbar" style="background:linear-gradient(90deg,#34b0ff,#1f7fe0)"></div>
-        <div class="ptop"><span class="ptag" style="background:rgba(52,176,255,.14);color:var(--blue)">Bot</span></div>
-        <h3>🛡️ PriceGlow — price watchdog</h3>
-        <p>A bot that tracks prices and stock on Wildberries, Ozon and Yandex.Market and pings the user when a price drops or an item is back. Subscription via Telegram Stars.</p>
+        <div class="ptop"><span class="ptag" style="background:rgba(52,176,255,.14);color:var(--blue)" data-i18n="tag.bot">Bot</span></div>
+        <h3 data-i18n="p.priceglow.t">🛡️ PriceGlow — price watchdog</h3>
+        <p data-i18n="p.priceglow.d">A bot that tracks prices and stock on Wildberries, Ozon and Yandex.Market and pings the user when a price drops or an item is back. Subscription via Telegram Stars.</p>
         <div class="tags"><span class="tag">Python</span><span class="tag">aiogram</span><span class="tag">Playwright</span><span class="tag">SQLite</span><span class="tag">Stars</span></div>
       </div>
 
       <!-- Avito Sniper -->
       <div class="card p tilt reveal">
         <div class="pbar" style="background:linear-gradient(90deg,#2ec4b6,#1f7fe0)"></div>
-        <div class="ptop"><span class="ptag" style="background:rgba(46,196,182,.14);color:var(--teal)">Bot · Scraping</span></div>
-        <h3>🎯 Avito Sniper — deal hunter</h3>
-        <p>You type an item and a target price; the bot watches Avito and pings you the moment a fresh listing matches — getting past DataDome anti-bot via a real stealth browser.</p>
+        <div class="ptop"><span class="ptag" style="background:rgba(46,196,182,.14);color:var(--teal)" data-i18n="tag.botscrape">Bot · Scraping</span></div>
+        <h3 data-i18n="p.avito.t">🎯 Avito Sniper — deal hunter</h3>
+        <p data-i18n="p.avito.d">You type an item and a target price; the bot watches Avito and pings you the moment a fresh listing matches — getting past DataDome anti-bot via a real stealth browser.</p>
         <div class="tags"><span class="tag">Python</span><span class="tag">aiogram</span><span class="tag">Playwright</span><span class="tag">Anti-bot</span></div>
       </div>
 
       <!-- Vitrina -->
       <div class="card p tilt reveal">
         <div class="pbar" style="background:linear-gradient(90deg,#ffb703,#fb8500)"></div>
-        <div class="ptop"><span class="ptag live">Live demo</span><span class="muted" style="font-size:13px">Mini App</span></div>
-        <h3>⭐ Vitrina — digital goods shop</h3>
-        <p>A Mini App where sellers list digital products (keys, files, links) and buyers pay with Telegram Stars right inside the chat — delivered instantly. No acquiring, no legal entity.</p>
+        <div class="ptop"><span class="ptag live" data-i18n="tag.live">Live demo</span><span class="muted" style="font-size:13px" data-i18n="tag.miniapp">Mini App</span></div>
+        <h3 data-i18n="p.vitrina.t">⭐ Vitrina — digital goods shop</h3>
+        <p data-i18n="p.vitrina.d">A Mini App where sellers list digital products (keys, files, links) and buyers pay with Telegram Stars right inside the chat — delivered instantly. No acquiring, no legal entity.</p>
         <div class="tags"><span class="tag">React</span><span class="tag">Fastify</span><span class="tag">node:sqlite</span><span class="tag">Telegram Stars</span></div>
         <div class="plinks">
-          <a class="plink" href="https://memnikfff-vitrina.hf.space/s/demo" target="_blank" rel="noopener">▶ Open live demo</a>
+          <a class="plink" href="https://memnikfff-vitrina.hf.space/s/demo" target="_blank" rel="noopener" data-i18n="link.demo">▶ Open live demo</a>
         </div>
       </div>
 
       <!-- Habit Coach -->
       <div class="card p tilt reveal">
         <div class="pbar" style="background:linear-gradient(90deg,#8b7bff,#34b0ff)"></div>
-        <div class="ptop"><span class="ptag live">Live demo</span><span class="muted" style="font-size:13px">Mini App · AI</span></div>
-        <h3>📋 Habit Coach — tracker with AI</h3>
-        <p>A habit-tracking Mini App with an AI coach that analyzes progress and streams personalized advice. Secure Telegram login, theme-aware UI, reminders.</p>
+        <div class="ptop"><span class="ptag live" data-i18n="tag.live">Live demo</span><span class="muted" style="font-size:13px" data-i18n="tag.miniai">Mini App · AI</span></div>
+        <h3 data-i18n="p.habit.t">📋 Habit Coach — tracker with AI</h3>
+        <p data-i18n="p.habit.d">A habit-tracking Mini App with an AI coach that analyzes progress and streams personalized advice. Secure Telegram login, theme-aware UI, reminders.</p>
         <div class="tags"><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Supabase</span><span class="tag">LLM</span></div>
         <div class="plinks">
-          <a class="plink" href="https://memnikffff-test.hf.space" target="_blank" rel="noopener">▶ Open live demo</a>
+          <a class="plink" href="https://memnikffff-test.hf.space" target="_blank" rel="noopener" data-i18n="link.demo">▶ Open live demo</a>
         </div>
       </div>
 
@@ -310,18 +311,18 @@
 <section>
   <div class="wrap">
     <div class="contact reveal">
-      <div class="h2">Let’s build your bot</div>
-      <p class="lead" style="margin:14px auto 28px">Tell me what you need — I’ll scope it and ship clean, documented code that runs 24/7.</p>
+      <div class="h2" data-i18n="contact.h2">Let’s build your bot</div>
+      <p class="lead" style="margin:14px auto 28px" data-i18n="contact.lead">Tell me what you need — I’ll scope it and ship clean, documented code that runs 24/7.</p>
       <div class="cta" style="justify-content:center">
-        <a class="btn btn-primary mag" href="https://www.fiverr.com/memnik" target="_blank" rel="noopener">Hire me on Fiverr →</a>
-        <a class="btn btn-ghost mag" href="https://t.me/tets_molot_bot" target="_blank" rel="noopener">Try the auction bot</a>
+        <a class="btn btn-primary mag" href="https://www.fiverr.com/memnik" target="_blank" rel="noopener" data-i18n="cta.hire">Hire me on Fiverr →</a>
+        <a class="btn btn-ghost mag" href="https://t.me/tets_molot_bot" target="_blank" rel="noopener" data-i18n="contact.try">Try the auction bot</a>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="wrap">© <span id="y"></span> memnik · Telegram Bots &amp; Mini Apps Developer · Python · React · Node.js</div>
+  <div class="wrap" data-i18n-html="footer">© <span id="y"></span> memnik · Telegram Bots &amp; Mini Apps Developer · Python · React · Node.js</div>
 </footer>
 
 <script>
@@ -435,6 +436,98 @@
     size(); draw();
     var rt; addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(size,180);});
   }
+})();
+</script>
+
+<script>
+/* ===== i18n: переключение RU/EN ===== */
+(function(){
+  var I18N = {
+    en: { _title: "memnik — Telegram Bots & Mini Apps Developer" },
+    ru: {
+      _title: "memnik — разработчик Telegram-ботов и Mini Apps",
+      "nav.work": "Работы",
+      "nav.services": "Услуги",
+      "nav.hire": "Нанять",
+      "hero.eyebrow": "Фриланс · Telegram",
+      "hero.h1": 'Telegram <span class="g">боты и мини-аппы</span><br>которыми реально пользуются',
+      "hero.sub": "Делаю продакшн-ботов и мини-аппы для Telegram — реалтайм, с оплатой внутри (Telegram Stars) и парсингом, который обходит анти-бот защиту. Проекты с реальными пользователями, а не демки.",
+      "cta.hire": "Нанять на Fiverr →",
+      "cta.demos": "Смотреть демо",
+      "stat.projects": "проектов сделано",
+      "stat.demos": "живых демо в браузере",
+      "stat.payments": "оплата внутри Telegram",
+      "stat.deployed": "развёрнуто и работает",
+      "svc.h2": "Что я делаю",
+      "svc.lead": "Под ключ: от идеи и чистого кода до деплоя, который работает круглосуточно.",
+      "svc.bots.t": "Telegram-боты",
+      "svc.bots.d": "Боты на aiogram любой сложности — меню, сценарии, базы данных, рассылки, админ-панели, оплата.",
+      "svc.mini.t": "Telegram Mini Apps",
+      "svc.mini.d": "React-приложения внутри Telegram: нативный UX, вход без пароля, обновления в реальном времени по WebSocket.",
+      "svc.pay.t": "Оплата внутри Telegram",
+      "svc.pay.d": "Telegram Stars и Payments: инвойсы, подписки, автовыдача и возвраты.",
+      "svc.scrape.t": "Парсинг и мониторинг",
+      "svc.scrape.d": "Мониторинг цен и объявлений (Avito, Wildberries, Ozon) с обходом анти-бота через реальный браузер.",
+      "work.h2": "Избранные работы",
+      "work.lead": "Четыре проекта живые — откройте прямо в браузере (оплата в демо имитируется).",
+      "tag.live": "Живое демо",
+      "tag.flagship": "Флагман",
+      "tag.superapp": "Супер-апп",
+      "tag.bot": "Бот",
+      "tag.botscrape": "Бот · Парсинг",
+      "tag.miniapp": "Mini App",
+      "tag.miniai": "Mini App · ИИ",
+      "p.molotok.t": "🔨 Molotok — живые аукционы",
+      "p.molotok.d": "Mini App для аукционов в реальном времени. Продавец выставляет лот, участники делают ставки вживую (WebSocket), анти-снайп-таймер продлевает последние секунды, победитель платит через Telegram Stars, а бот выдаёт лот автоматически.",
+      "p.we.t": "❤️ We — супер-апп для совместной жизни",
+      "p.we.d": "Mini App для пар, семей и соседей по квартире: общие финансы с логикой «кто кому должен», бытовые задачи, лента и календарь — всё обновляется в реальном времени у всех участников.",
+      "p.priceglow.t": "🛡️ PriceGlow — сторож цен",
+      "p.priceglow.d": "Бот следит за ценами и наличием на Wildberries, Ozon и Яндекс.Маркете и пишет, когда цена упала или товар снова в наличии. Подписка через Telegram Stars.",
+      "p.avito.t": "🎯 Avito Sniper — охотник за объявлениями",
+      "p.avito.d": "Указываешь товар и желаемую цену — бот следит за Avito и пишет, как только появляется подходящее свежее объявление, обходя анти-бот DataDome через реальный stealth-браузер.",
+      "p.vitrina.t": "⭐ Vitrina — магазин цифровых товаров",
+      "p.vitrina.d": "Mini App, где продавцы выкладывают цифровые товары (ключи, файлы, ссылки), а покупатели платят через Telegram Stars прямо в чате — выдача моментальная. Без эквайринга и юрлица.",
+      "p.habit.t": "📋 Habit Coach — трекер с ИИ",
+      "p.habit.d": "Mini App для трекинга привычек с ИИ-коучем, который анализирует прогресс и стримит персональные советы. Безопасный вход через Telegram, тема под клиента, напоминания.",
+      "link.demo": "▶ Открыть демо",
+      "link.tg": "Открыть в Telegram",
+      "contact.h2": "Давайте сделаем вашего бота",
+      "contact.lead": "Расскажите задачу — оценю и сделаю чистый, документированный код, который работает 24/7.",
+      "contact.try": "Попробовать бот-аукцион",
+      "footer": '© <span id="y"></span> memnik · Разработчик Telegram-ботов и Mini Apps · Python · React · Node.js'
+    }
+  };
+
+  var btn = document.getElementById('lang');
+  function setYear(){ var y=document.getElementById('y'); if(y) y.textContent=new Date().getFullYear(); }
+
+  function apply(lang){
+    document.documentElement.lang = lang;
+    var dict = I18N[lang] || {};
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var k=el.getAttribute('data-i18n');
+      if(lang==='en'){ if(el._en!=null) el.textContent=el._en; }
+      else if(dict[k]!=null){ if(el._en==null) el._en=el.textContent; el.textContent=dict[k]; }
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el){
+      var k=el.getAttribute('data-i18n-html');
+      if(lang==='en'){ if(el._en!=null) el.innerHTML=el._en; }
+      else if(dict[k]!=null){ if(el._en==null) el._en=el.innerHTML; el.innerHTML=dict[k]; }
+    });
+    setYear();
+    if(dict._title) document.title=dict._title;
+    else document.title=I18N.en._title;
+    if(btn) btn.textContent = (lang==='ru' ? 'EN' : 'RU');
+    try{ localStorage.setItem('lang', lang); }catch(e){}
+  }
+
+  var saved; try{ saved=localStorage.getItem('lang'); }catch(e){}
+  var initial = saved || ((navigator.language||'').toLowerCase().indexOf('ru')===0 ? 'ru' : 'en');
+  apply(initial);
+
+  if(btn) btn.addEventListener('click', function(){
+    apply(document.documentElement.lang==='ru' ? 'en' : 'ru');
+  });
 })();
 </script>
 </body>
