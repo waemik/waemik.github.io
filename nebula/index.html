@@ -279,8 +279,12 @@ footer{border-top:1px solid var(--line);padding:60px 0 44px;background:var(--bg-
 .reveal.in{opacity:1;transform:none}
 
 /* ============ i18n FADE ============ */
-[data-i18n]{transition:opacity .22s ease}
-body.lang-switching [data-i18n]{opacity:0}
+[data-i18n]{transition:opacity .32s cubic-bezier(.22,1,.36,1),transform .32s cubic-bezier(.22,1,.36,1),filter .32s cubic-bezier(.22,1,.36,1);will-change:opacity,transform}
+body.lang-switching [data-i18n]{opacity:0;transform:translateY(8px);filter:blur(4px)}
+@media (prefers-reduced-motion: reduce){
+  [data-i18n]{transition:opacity .2s ease}
+  body.lang-switching [data-i18n]{transform:none;filter:none}
+}
 
 /* ============ CORE SWITCH ============ */
 .core-switch{position:fixed;right:22px;bottom:22px;z-index:40;display:flex;align-items:center;gap:13px;
@@ -1062,9 +1066,13 @@ window.addEventListener('DOMContentLoaded', ()=>{
       b.classList.toggle('on', b.dataset.setLang===lang));
   }
   function setLang(lang){
-    if(html.dataset.lang === lang) return;
+    if(html.dataset.lang === lang || document.body.classList.contains('lang-switching')) return;
     document.body.classList.add('lang-switching');
-    setTimeout(()=>{ applyLang(lang); document.body.classList.remove('lang-switching'); }, 220);
+    setTimeout(()=>{
+      applyLang(lang);                                   // меняем текст, пока он скрыт
+      requestAnimationFrame(()=>                          // ждём отрисовки нового текста...
+        requestAnimationFrame(()=> document.body.classList.remove('lang-switching'))); // ...и плавно проявляем
+    }, 320);
   }
   document.querySelectorAll('.lang button').forEach(b=>
     b.addEventListener('click', ()=> setLang(b.dataset.setLang)));
